@@ -1,0 +1,126 @@
+/*Body style*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: rgba(128, 128, 128, 0.47);
+    font-size: 120%;
+  }
+  
+ /*Header style*/
+  header {
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    background-color: #e4e4e4d8; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+  header h1 {
+    margin: 30px;
+    color: rgb(100, 99, 99);
+    padding-left: 40px;
+    font-size: xx-large;
+  } 
+  header img.logo {
+    height: 100px; 
+    padding-right: 50px;
+  }
+  
+  /*Style of Card section*/
+  .card {
+    background: rgba(50, 49, 49, 0.594);
+    color: rgb(250, 250, 250);
+    padding: 2em;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 520px;
+    max-height: 320px;
+    margin: 1em;
+  }
+
+  /*Search Area style*/
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #cfcece;
+    color: rgb(45, 43, 43);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #dfdcdc;
+    color: rgb(0, 0, 0);
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+  } 
+  button:hover {
+    background: #aeadad;
+  }
+
+ /*Weather Information display style*/
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+  } 
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  } 
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: rgba(255, 255, 255, 0.959);
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+  
+  /*Footer style*/
+  footer {
+    width: 100%;
+    height: 20px;
+    padding: 15px;
+    background-color: #e4e4e4d8; 
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    position: fixed;
+    bottom: 0;
+  }
+  footer p,h5{
+   font-size: medium ;
+   font-family: 'Open Sans', sans-serif; ;
+   margin: auto;
+   color: #6c6a6ade;
+   size: 12px;
+  }
